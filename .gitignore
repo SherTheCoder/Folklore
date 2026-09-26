@@ -1,0 +1,22 @@
+# Build products
+Appli/Debug/
+FSBL/Debug/
+
+# Blender renders; the packed atlas in Appli/Core/Src is what the build uses
+Kikkar_UI_Assets/out/
+
+# The trained model is not checked in; see model/README.md
+model/*.tflite
+model/*.h5
+model/*.pb
+
+# Server captures
+server/captures/
+captures/
+
+# Editor and platform noise
+.DS_Store
+**/.DS_Store
+*.bak
+__pycache__/
+*.pyc

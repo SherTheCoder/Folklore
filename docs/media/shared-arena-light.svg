@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="274" viewBox="0 0 880 274" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+<title id="t">RAM sharing between the neural network and the network stack</title>
+<desc id="d">Without sharing, the neural network&#x27;s RAM, the base RAM that keeps the connection alive and separate streaming buffers are all reserved the whole time, which costs 18 KB extra. With sharing, the base connection RAM stays, and once the keyword is detected the network reuses the neural network&#x27;s RAM for its streaming buffers, saving 18 KB.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 Z" fill="#59636e"/></marker></defs>
+<text x="390.0" y="14.0" font-size="11.5" font-weight="600" fill="#1f2328" text-anchor="middle">keyword detected</text>
+<text x="590.0" y="14.0" font-size="11.5" font-weight="600" fill="#1f2328" text-anchor="middle">command ends</text>
+<text x="275.0" y="36.0" font-size="12" font-weight="400" fill="#59636e" text-anchor="middle">listening for the wake word</text>
+<text x="490.0" y="36.0" font-size="12" font-weight="400" fill="#59636e" text-anchor="middle">streaming your command</text>
+<text x="655.0" y="36.0" font-size="12" font-weight="400" fill="#59636e" text-anchor="middle">listening</text>
+<line x1="390.0" y1="20.0" x2="390.0" y2="268.0" stroke="#eaeef2" stroke-width="1" stroke-linecap="round"/>
+<line x1="590.0" y1="20.0" x2="590.0" y2="268.0" stroke="#eaeef2" stroke-width="1" stroke-linecap="round"/>
+<text x="0.0" y="62.0" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Without RAM sharing</text>
+<text x="0.0" y="87.5" font-size="12.5" font-weight="400" fill="#59636e" text-anchor="start">Neural network</text>
+<rect x="161.0" y="70.0" width="228.0" height="26.0" rx="4" fill="#4a3aa7"/>
+<text x="275.0" y="87.5" font-size="11.5" font-weight="600" fill="#ffffff" text-anchor="middle">detecting the wake word</text>
+<rect x="391.8" y="70.8" width="196.5" height="24.5" rx="4" fill="none" stroke="#4a3aa7" stroke-width="1.5"/>
+<text x="490.0" y="87.5" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="middle">reserved, doing nothing</text>
+<rect x="591.0" y="70.0" width="128.0" height="26.0" rx="4" fill="#4a3aa7"/>
+<text x="655.0" y="87.5" font-size="11.5" font-weight="600" fill="#ffffff" text-anchor="middle">detecting</text>
+<text x="0.0" y="119.5" font-size="12.5" font-weight="400" fill="#59636e" text-anchor="start">Link kept alive</text>
+<rect x="161.0" y="102.0" width="558.0" height="26.0" rx="4" fill="#d1d9e0"/>
+<text x="440.0" y="119.5" font-size="11.5" font-weight="600" fill="#1f2328" text-anchor="middle">base RAM that keeps the connection open</text>
+<text x="0.0" y="151.5" font-size="12.5" font-weight="400" fill="#59636e" text-anchor="start">Streaming buffers</text>
+<rect x="161.8" y="134.8" width="226.5" height="24.5" rx="4" fill="none" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="275.0" y="151.5" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="middle">reserved, doing nothing</text>
+<rect x="391.0" y="134.0" width="198.0" height="26.0" rx="4" fill="#1baf7a"/>
+<text x="490.0" y="151.5" font-size="11.5" font-weight="600" fill="#1f2328" text-anchor="middle">sending your audio</text>
+<rect x="591.8" y="134.8" width="126.5" height="24.5" rx="4" fill="none" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="740.0" y="146.0" font-size="20" font-weight="600" fill="#1f2328" text-anchor="start">+18 KB</text>
+<text x="740.0" y="163.0" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">extra RAM</text>
+<text x="0.0" y="198.0" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">With RAM sharing, as in Kikkar</text>
+<text x="490.0" y="198.0" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="middle">RAM handed to the network</text>
+<text x="0.0" y="223.5" font-size="12.5" font-weight="400" fill="#59636e" text-anchor="start">Shared block</text>
+<rect x="161.0" y="206.0" width="228.0" height="26.0" rx="4" fill="#4a3aa7"/>
+<text x="275.0" y="223.5" font-size="11.5" font-weight="600" fill="#ffffff" text-anchor="middle">neural network</text>
+<rect x="391.0" y="206.0" width="198.0" height="26.0" rx="4" fill="#1baf7a"/>
+<text x="490.0" y="223.5" font-size="11.5" font-weight="600" fill="#1f2328" text-anchor="middle">streaming buffers</text>
+<rect x="591.0" y="206.0" width="128.0" height="26.0" rx="4" fill="#4a3aa7"/>
+<text x="655.0" y="223.5" font-size="11.5" font-weight="600" fill="#ffffff" text-anchor="middle">neural network</text>
+<text x="0.0" y="255.5" font-size="12.5" font-weight="400" fill="#59636e" text-anchor="start">Link kept alive</text>
+<rect x="161.0" y="238.0" width="558.0" height="26.0" rx="4" fill="#d1d9e0"/>
+<text x="440.0" y="255.5" font-size="11.5" font-weight="600" fill="#1f2328" text-anchor="middle">base RAM that keeps the connection open</text>
+<text x="740.0" y="226.0" font-size="20" font-weight="600" fill="#1f2328" text-anchor="start">18 KB</text>
+<text x="740.0" y="243.0" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">saved</text>
+</svg>

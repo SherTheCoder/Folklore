@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+<title id="t">How Kikkar works</title>
+<desc id="d">Always on, on the board: microphone, audio event detection, resample to 16 kHz, log-mel features every 10 ms, a streaming int8 DS-CNN every 30 ms, trigger. After the keyword: the flower blooms, and the pre-roll buffer feeds a sender that rewinds 320 ms, over an already-open TCP link to the cloud ASR.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L9 5 L0 9 Z" fill="#9198a1"/></marker></defs>
+<text x="2.0" y="28.0" font-size="11" font-weight="600" fill="#9198a1" text-anchor="start" letter-spacing="0.06em">ALWAYS ON, ON THE BOARD</text>
+<text x="2.0" y="185.0" font-size="11" font-weight="600" fill="#9198a1" text-anchor="start" letter-spacing="0.06em">ONLY AFTER</text>
+<text x="2.0" y="201.0" font-size="11" font-weight="600" fill="#9198a1" text-anchor="start" letter-spacing="0.06em">THE KEYWORD</text>
+<rect x="2.0" y="44.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="13.0" y="71.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Microphone</text>
+<text x="13.0" y="89.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">48 kHz, always on</text>
+<rect x="150.0" y="44.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="161.0" y="66.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Audio Event</text>
+<text x="161.0" y="81.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Detection</text>
+<text x="161.0" y="99.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">is anyone talking?</text>
+<line x1="139.0" y1="75.0" x2="147.0" y2="75.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="298.0" y="44.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="309.0" y="71.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Resample</text>
+<text x="309.0" y="89.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">48 to 16 kHz</text>
+<line x1="287.0" y1="75.0" x2="295.0" y2="75.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="446.0" y="44.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="457.0" y="66.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Log-mel</text>
+<text x="457.0" y="81.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">features</text>
+<text x="457.0" y="99.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">40 bands / 10 ms</text>
+<line x1="435.0" y1="75.0" x2="443.0" y2="75.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="594.0" y="44.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="605.0" y="66.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Streaming</text>
+<text x="605.0" y="81.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">DS-CNN</text>
+<text x="605.0" y="99.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">int8, 44 KB</text>
+<line x1="583.0" y1="75.0" x2="591.0" y2="75.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="742.0" y="44.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="753.0" y="71.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Trigger</text>
+<text x="753.0" y="89.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">one event per word</text>
+<line x1="731.0" y1="75.0" x2="739.0" y2="75.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="150.0" y="158.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="161.0" y="185.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Flower blooms</text>
+<text x="161.0" y="203.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">on the STM32 panel</text>
+<rect x="298.0" y="158.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="309.0" y="185.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Pre-roll</text>
+<text x="309.0" y="203.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">last 512 ms kept</text>
+<rect x="446.0" y="158.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="457.0" y="185.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Sender</text>
+<text x="457.0" y="203.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">rewinds 320 ms</text>
+<rect x="594.0" y="158.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="605.0" y="185.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">TCP link</text>
+<text x="605.0" y="203.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">already open</text>
+<rect x="742.0" y="158.0" width="136.0" height="62.0" rx="8" fill="#151b23" stroke="#3d444d" stroke-width="1"/>
+<text x="753.0" y="185.0" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="start">Cloud ASR</text>
+<text x="753.0" y="203.0" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start">English, Hindi, Punjabi</text>
+<line x1="435.0" y1="189.0" x2="443.0" y2="189.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="583.0" y1="189.0" x2="591.0" y2="189.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="731.0" y1="189.0" x2="739.0" y2="189.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<polyline points="810.0,107.0 810.0,130.0 218.0,130.0 218.0,155.0" fill="none" stroke="#9198a1" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="514.0" y1="130.0" x2="514.0" y2="155.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="514.0" cy="130.0" r="4" fill="#f0f6fc"/>
+<text x="662.0" y="123.0" font-size="11.5" font-weight="400" fill="#9198a1" text-anchor="middle">keyword confirmed</text>
+<line x1="366.0" y1="124.0" x2="366.0" y2="136.0" stroke="#0d1117" stroke-width="8" stroke-linecap="round"/>
+<line x1="366.0" y1="107.0" x2="366.0" y2="155.0" stroke="#9198a1" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+</svg>
