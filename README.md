@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>Say "Utho Kikkar" and it blooms. Whatever you say next goes straight to the cloud.</b><br>
-  An efficient wake-word gateway that listens on a microcontroller, and only talks to the internet once it has been woken up.
+  <b>[Try the model live at www.TeamFolklore.site](https://www.teamfolklore.site)</b><br>
 </p>
 
 <p align="center">
