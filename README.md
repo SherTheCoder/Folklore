@@ -6,8 +6,7 @@
 
 <p align="center">
   <b>Say "Utho Kikkar" and it blooms. Whatever you say next goes straight to the cloud.</b><br>
-  <b>[Try the model live at www.TeamFolklore.site](https://www.teamfolklore.site)</b><br>
-</p>
+  <b>TRY THE MODEL LIVE at <a href="https://www.teamfolklore.site">www.TeamFolklore.site</a></b><br></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/STM32N657-premium-2a78d6" alt="STM32N657, premium">
